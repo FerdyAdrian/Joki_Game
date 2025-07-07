@@ -74,6 +74,7 @@
     </style>
 </head>
 <body>
+    @auth
     <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
     <div class="sidebar" id="sidebar">
         <div class="logo">
@@ -92,6 +93,7 @@
             </form>
         </nav>
     </div>
+    @endauth
     <div class="content">
         @yield('content')
     </div>
