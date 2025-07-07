@@ -10,7 +10,10 @@
         body {
             background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
             font-family: 'Poppins', Arial, sans-serif;
+<<<<<<< HEAD
             min-height: 100vh;
+=======
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .sidebar {
             height: 100vh;
@@ -18,10 +21,14 @@
             position: fixed;
             top: 0;
             left: 0;
+<<<<<<< HEAD
             background: rgba(10,35,66,0.85);
             backdrop-filter: blur(8px);
             border-right: 2px solid #1de9b6;
             box-shadow: 2px 0 16px 0 rgba(31,38,135,0.15);
+=======
+            background: linear-gradient(180deg, #0a2342 60%, #1de9b6 100%);
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
             color: #fff;
             padding-top: 30px;
             transition: all 0.3s;
@@ -32,15 +39,21 @@
             font-weight: 600;
             margin-bottom: 10px;
             border-radius: 8px;
+<<<<<<< HEAD
             transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
             display: flex;
             align-items: center;
             gap: 10px;
+=======
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .sidebar .nav-link.active, .sidebar .nav-link:hover {
             background: #1de9b6;
             color: #0a2342 !important;
+<<<<<<< HEAD
             transform: scale(1.05);
+=======
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .sidebar .logo {
             text-align: center;
@@ -84,14 +97,20 @@
         }
         .centered-auth {
             min-height: 100vh;
+<<<<<<< HEAD
             width: 100vw;
+=======
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
             display: flex;
             align-items: center;
             justify-content: center;
             background: url('/img/free-fire.png') no-repeat center center fixed;
             background-size: cover;
             position: relative;
+<<<<<<< HEAD
             box-sizing: border-box;
+=======
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .centered-auth::before {
             content: '';
@@ -109,6 +128,7 @@
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             border: 1px solid rgba(255,255,255,0.18);
+<<<<<<< HEAD
             padding: 40px 32px 32px 32px;
             max-width: 400px;
             width: 100%;
@@ -118,11 +138,17 @@
             align-items: center;
             animation: fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both;
             transition: box-shadow 0.2s, transform 0.2s;
+=======
+            padding: 40px 32px;
+            max-width: 400px;
+            width: 100%;
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .card-auth h2 {
             font-family: 'Orbitron', Arial, sans-serif;
             color: #1de9b6;
             text-align: center;
+<<<<<<< HEAD
             margin-bottom: 28px;
             letter-spacing: 2px;
             font-size: 2.2rem;
@@ -137,6 +163,11 @@
         }
         .card-auth .form-check {
             text-align: left;
+=======
+            margin-bottom: 24px;
+            letter-spacing: 2px;
+            font-size: 2rem;
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .form-control {
             border-radius: 10px;
@@ -147,14 +178,19 @@
             border: none;
             border-radius: 10px;
             font-weight: 600;
+<<<<<<< HEAD
             transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+=======
+            transition: 0.2s;
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
         }
         .btn-primary:hover {
             background: linear-gradient(90deg, #0a2342 0%, #1de9b6 100%);
             color: #fff;
             transform: scale(1.05);
         }
+<<<<<<< HEAD
         .btn-primary:active {
             transform: scale(0.97);
             box-shadow: 0 1px 2px rgba(31,38,135,0.10);
@@ -207,6 +243,8 @@
             box-shadow: 0 12px 40px 0 rgba(31,38,135,0.30);
             transform: scale(1.02);
         }
+=======
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
     </style>
 </head>
 <body>
@@ -218,11 +256,19 @@
                 <h4 class="mt-2" style="color:#1de9b6;">Haftap</h4>
             </div>
             <nav class="nav flex-column">
+<<<<<<< HEAD
                 <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="/home">🏠 Dashboard</a>
                 <a class="nav-link {{ request()->is('pesanan') ? 'active' : '' }}" href="/pesanan">📝 Pesanan Saya</a>
                 <a class="nav-link {{ request()->is('pesanan-tersedia') ? 'active' : '' }}" href="/pesanan-tersedia">🎮 Pesanan Tersedia</a>
                 <a class="nav-link {{ request()->is('usecase-jokigame') ? 'active' : '' }}" href="/usecase-jokigame">📚 Use Case</a>
                 <a class="nav-link {{ request()->is('profil') ? 'active' : '' }}" href="/profil">👤 Akun</a>
+=======
+                <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="/home">Dashboard</a>
+                <a class="nav-link {{ request()->is('pesanan') ? 'active' : '' }}" href="/pesanan">Pesanan Saya</a>
+                <a class="nav-link {{ request()->is('pesanan-tersedia') ? 'active' : '' }}" href="/pesanan-tersedia">Pesanan Tersedia</a>
+                <a class="nav-link {{ request()->is('usecase-jokigame') ? 'active' : '' }}" href="/usecase-jokigame">Use Case</a>
+                <a class="nav-link {{ request()->is('profil') ? 'active' : '' }}" href="/profil">Akun</a>
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
                 <form action="{{ route('logout') }}" method="POST" class="mt-3">
                     @csrf
                     <button type="submit" class="btn btn-outline-light w-100">Logout</button>
@@ -246,4 +292,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<<<<<<< HEAD
 </html> 
+=======
+</html> 
+>>>>>>> 69ba2de8f2b718dd3cb9432885f6b174a2472149
