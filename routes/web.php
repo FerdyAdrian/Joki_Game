@@ -32,7 +32,7 @@ Route::resource('pesanan', PesananController::class)->middleware(['auth', 'role:
 Route::post('pesanan/{id}/upload-bukti', [PesananController::class, 'uploadBukti'])->name('pesanan.uploadBukti')->middleware('auth');
 Route::post('pesanan/{id}/konfirmasi-selesai', [PesananController::class, 'konfirmasiSelesai'])->name('pesanan.konfirmasiSelesai')->middleware('auth');
 Route::post('pesanan/{id}/konfirmasi-pembayaran', [PesananController::class, 'konfirmasiPembayaran'])->name('pesanan.konfirmasiPembayaran')->middleware('auth');
-Route::get('pesanan-tersedia', [PesananController::class, 'pesananTersedia'])->name('pesanan.tersedia')->middleware(['auth', 'role:joki']);
+Route::get('pesanan-tersedia', [PesananController::class, 'pesananTersedia'])->name('pesanan.tersedia')->middleware(['auth']);
 Route::post('pesanan/{id}/terima', [PesananController::class, 'terimaPesanan'])->name('pesanan.terima')->middleware('auth');
 Route::post('pesanan/{id}/tolak', [PesananController::class, 'tolakPesanan'])->name('pesanan.tolak')->middleware('auth');
 Route::post('pesanan/{id}/konfirmasi-selesai-joki', [PesananController::class, 'konfirmasiSelesaiJoki'])->name('pesanan.konfirmasiSelesaiJoki')->middleware('auth');
