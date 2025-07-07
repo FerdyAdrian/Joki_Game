@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/profil', [ProfilController::class, 'index'])->middleware('auth')->name('profil');
-Route::post('/profil', [ProfilController::class, 'update'])->middleware('auth');
+Route::post('/profil', [ProfilController::class, 'update'])->middleware('auth')->name('profil.update');
 
 Route::view('/usecase-jokigame', 'usecase_jokigame');
 
